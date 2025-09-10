@@ -1,0 +1,60 @@
+{
+  "random_seed": 0,
+  "patch_sizes": [
+    64,
+    128,
+    256,
+    512
+  ],
+  "pool_order": "mean",
+  "patch_sample_ratio": [
+    1,
+    0.25,
+    0.06,
+    0.02
+  ],
+  "augmentation": "None",
+  "neighbor_pred_size": 3,
+  "neighbor_size": 5,
+  "pixelhop_sample_ratio": 0.5,
+  "pixelHop_paths": [],
+  "model_paths": [
+    "./ckpt/pretrain/level_1/level_1.pkl",
+    "./ckpt/pretrain/level_2/level_2.pkl",
+    "./ckpt/pretrain/level_3/level_3.pkl",
+    "./ckpt/pretrain/level_4/level_4.pkl"
+  ],
+  "rft_sample_ratio": [
+    1,
+    0.5,
+    0.25,
+    0.125,
+    0.01
+  ],
+  "rft_val_ratio": 0.2,
+  "num_rft_features": [
+    500,
+    800,
+    800,
+    800,
+    800
+  ],
+  "lnt_tree": 500,
+  "lnt_depth": 3,
+  "show_lnt_rank": 1,
+  "lnt_lr": 0.1,
+  "lnt_feat_in_comb": 50,
+  "xgb_sample_ratio": [
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "xgb_val_ratio": 0.2,
+  "xgb_depth": 3,
+  "xgb_lr": 0.2,
+  "xgb_num_round": 8000,
+  "xgb_early_stopping_rounds": 10,
+  "dump_fig": true
+}
